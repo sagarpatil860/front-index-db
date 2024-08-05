@@ -1,5 +1,5 @@
 {
-  "name": "dbleaf",
+  "name": "front-index-db",
   "version": "1.0.0",
   "description": "Evoking the idea of a leaf in a tree (representing data) within the web ecosystem.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sagarpatil860/DBLeaf.git"
+    "url": "git+https://github.com/sagarpatil860/front-index-db.git"
   },
   "keywords": [
     "Indexeddb",
@@ -21,7 +21,7 @@
   "author": "Sagar Patil",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sagarpatil860/DBLeaf/issues"
+    "url": "https://github.com/sagarpatil860/front-index-db/issues"
   },
-  "homepage": "https://github.com/sagarpatil860/DBLeaf#readme"
+  "homepage": "https://github.com/sagarpatil860/front-index-db#readme"
 }
