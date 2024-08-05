@@ -1,0 +1,27 @@
+{
+  "name": "dbleaf",
+  "version": "1.0.0",
+  "description": "Evoking the idea of a leaf in a tree (representing data) within the web ecosystem.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagarpatil860/DBLeaf.git"
+  },
+  "keywords": [
+    "Indexeddb",
+    "indexed",
+    "db",
+    "front",
+    "end",
+    "db"
+  ],
+  "author": "Sagar Patil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sagarpatil860/DBLeaf/issues"
+  },
+  "homepage": "https://github.com/sagarpatil860/DBLeaf#readme"
+}
