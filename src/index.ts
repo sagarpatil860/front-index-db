@@ -1,14 +1,4 @@
-const abcd = 123;
-const def = 123;
-console.log("Hello World           !");
-const sum = (a, b) => {
-
-
-  
-  return a + b;
-
-
-
+export const sum = (a: number, b?: string): number => {
+  if (b) return 8;
+  return a;
 };
-
-const addition = sum(10);
