@@ -29,7 +29,7 @@ jobs:
         with:
           pr_number: ${{ github.event.pull_request.number }}
           message: |
-            _(execution **${{ github.run_id }}** / attempt **${{ github.run_attempt }}**)_
+            _(execution **${{ github.check_result }}**)_
         # with:
         # filePath: ./result.txt
         if: always()
