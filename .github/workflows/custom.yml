@@ -22,15 +22,6 @@ jobs:
         run: npm install
       - name: Run npm  check
         run: npm run check
-        id: check_result
-
-      - name: Comment PR with results
-        uses: thollander/actions-comment-pull-request@v2
-        with:
-          pr_number: ${{ github.event.pull_request.number }}
-          filePath: ${{ GITHUB_WORKSPACE }}/result.txt
-          # message: "Code scanning results:\n${{ steps.check_result.outputs.branch }}"
-        with:
-        if: always()
       - name: list
+        if: always()
         run: ls
