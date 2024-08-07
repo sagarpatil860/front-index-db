@@ -23,7 +23,7 @@ jobs:
       - name: Run npm  check
         run: npm run check
         id: check_result
-  Upload Reports:
+  Upload_Reports:
     runs-on: ubuntu-latest
     steps:
       - name: Comment PR with results
