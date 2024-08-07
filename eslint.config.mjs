@@ -8,7 +8,6 @@ export default tseslint.config(
   ...tseslint.configs.recommendedTypeChecked,
   ...tseslint.configs.stylisticTypeChecked,
   eslintConfigPrettier,
-
   {
     languageOptions: {
       parserOptions: {
@@ -41,5 +40,8 @@ export default tseslint.config(
       },
     },
     rules: eslintPluginPrettierRecommended.rules,
+  },
+  {
+    ignores: ["*.mjs", "**.config.js"],
   },
 );

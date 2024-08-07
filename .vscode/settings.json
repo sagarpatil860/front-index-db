@@ -1,5 +1,4 @@
 {
-  "eslint.experimental.useFlatConfig": false,
   "eslint.nodeEnv": "",
   "eslint.useESLintClass": true,
   "eslint.validate": [
@@ -16,5 +15,9 @@
   "editor.formatOnSave": true, // optional
   "editor.formatOnSaveMode": "file", // required to format on save
   "files.autoSave": "onFocusChange",
-  "eslint.format.enable": false // optional but recommended
+  "eslint.format.enable": false, // optional but recommended
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "prettier.endOfLine": "lf"
 }
