@@ -1,0 +1,27 @@
+name: Custom analysis
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  pull-requests: write
+
+jobs:
+  Analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "20" # Use a supported Node.js version
+      - name: Install dependencies
+        run: npm install
+      - name: Run npm  check
+        run: npm run check
+      - name: list
+        if: always()
+        run: ls
