@@ -1,4 +1,5 @@
-export const sum = (a: number, b?: string): number => {
+export const sum = (a, b?: string): number => {
   if (b) return 8;
+  else { }
   return a;
 };
