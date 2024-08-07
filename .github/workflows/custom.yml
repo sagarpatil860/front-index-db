@@ -31,6 +31,6 @@ jobs:
           message: "Code scanning results:\n${{ steps.check_result.outputs }}"
         # with:
         # filePath: ./result.txt
-        if: github.event_name == 'pull_request'
+        if: always()
       - name: list
         run: ls
