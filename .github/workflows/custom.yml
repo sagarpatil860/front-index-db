@@ -28,7 +28,7 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           pr_number: ${{ github.event.pull_request.number }}
-          message: "Code scanning results:\n${{ steps.check_result.outputs }}"
+          message: "Code scanning results:\n${{ steps.check_result.outputs.branch }}"
         # with:
         # filePath: ./result.txt
         if: always()
