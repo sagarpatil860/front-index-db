@@ -13,19 +13,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        id: check_result
         uses: actions/checkout@v4
+      - name: Setup Node.js
         uses: actions/setup-node@v2
-        uses: thollander/actions-comment-pull-request@v2
         with:
           node-version: "20" # Use a supported Node.js version
+      - name: Install dependencies
         run: npm install
+      - name: Run npm  check
         run: npm run check
+        id: check_result
 
+      - name: Comment PR with results
+        uses: thollander/actions-comment-pull-request@v2
         with:
           pr_number: ${{ github.event.pull_request.number }}
         message: "Code scanning results:\n${{ steps.check_result.outputs }}"
         # with:
-          # filePath: ./result.txt
+        # filePath: ./result.txt
         if: github.event_name == 'pull_request'
+      - name:
         run: ls
