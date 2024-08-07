@@ -28,7 +28,11 @@ jobs:
     steps:
       - name: Comment PR with results
         uses: thollander/actions-comment-pull-request@v2
+        # with:
+        #   pr_number: ${{ github.event.pull_request.number }}
+        # message: "Code scanning results:\n${{ steps.check_result.outputs }}"
         with:
-          pr_number: ${{ github.event.pull_request.number }}
-          message: "Code scanning results:\n${{ steps.check_result.outputs }}"
+          filePath: ./result.txt
         if: github.event_name == 'pull_request'
+      - name:
+        run: ls
